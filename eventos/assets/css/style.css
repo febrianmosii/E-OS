@@ -1,0 +1,187 @@
+@import 'font-style.css';
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: 'ProductSans';
+  font-size: 14px;
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+}
+
+#newest-title {
+  vertical-align: -webkit-baseline-middle;
+}
+
+.button, .button-selected, .dropdown {
+  cursor: pointer;
+  font-family: 'ProductSans';
+  font-size: 14px;
+  line-height: 160%;
+  -moz-border-radius: 2px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.button, .button-selected {
+  padding: 0 6px;
+  border-radius: 2px;
+  margin: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.button {
+  color: #000;
+  border: 1px solid #A9BBDF;
+  /* old browsers */
+  background: #FEFEFE;
+  /* firefox */
+  background: -moz-linear-gradient(top, #FEFEFE 0%, #F3F3F3 100%);
+  /* webkit */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#F3F3F3));
+  /* ie */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEFEFE', endColorstr='#F3F3F3',GradientType=0);
+}
+
+.button-selected, .button:hover {
+  border: 1px solid #678AC7;
+}
+
+.button-selected {
+  font-weight: bold;
+  color: #fff;
+  /* old browsers */
+  background: #6D8ACC;
+  /* firefox */
+  background: -moz-linear-gradient(top, #6D8ACC 0%, #7B98D9 100%);
+  /* webkit */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6D8ACC), color-stop(100%,#7B98D9));
+  /* ie */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6D8ACC', endColorstr='#7B98D9',GradientType=0);
+}
+
+#dropdown-holder {
+  margin: 15px;
+  opacity: 0.95;
+}
+
+#dropdown-holder .button, #dropdown-holder .button-selected {
+  height: 30px;
+  margin: 0;
+}
+
+.dropdown {
+  background: white;
+  border: 1px solid #A9BBDF;
+  padding: 15px;
+  border-top: 0;
+  line-height: 24px;
+  z-index: -1;
+  position: relative;
+}
+
+.dropdown-item {
+  padding: 0 6px;
+}
+
+.dropdown-list {
+  border-bottom: 1px #e3e6e7 solid;
+  line-height: 28px;
+}
+
+.dropdown-item, .dropdown-list:hover {
+  background: #E8ECF9;
+}
+
+#lean_overlay {
+  position: fixed;
+  z-index:100;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+  background: #000;
+  display: none;
+}
+
+.popupContainer{
+  position:absolute;
+  font-family: 16px;
+  width:330px;
+  height: auto;
+  left:45%;
+  top:80px;
+  background: #FFF;
+}
+
+#modal_trigger {
+  display: block;
+  left: 1%;
+  top: 12px;
+  position: absolute;
+}
+
+.btn {padding: 11px 20px; background: #ffffff;}
+
+.btn_red {background: #ED6347; color: #FFF;}
+
+.btn:hover {background: #E4E4E2;}
+.btn_red:hover {background: #C12B05;}
+
+a.btn {color:#666; text-align: center; text-decoration: none;}
+a.btn_red {color: #FFF;}
+
+.one_half {width:50%; display: block; float:left;}
+.one_half.last {width:45%; margin-left:5%;}
+
+/* Popup Styles*/
+.popupHeader {font-size:16px; text-transform: uppercase;}
+.popupHeader {background:#F4F4F2; position:relative; padding:10px 20px; border-bottom:1px solid #DDD; font-weight:bold;}
+.popupHeader .modal_close {position: absolute; right: 0; top:0; padding:10px 15px; background:#E4E4E2; cursor: pointer; color:#aaa; font-size:16px;}
+
+.popupBody {padding:20px;}
+
+
+/* Social Login Form */
+.social_login {}
+.social_login .social_box {display:block; clear:both; padding:10px; margin-bottom: 10px; background: #F4F4F2; overflow: hidden;}
+.social_login .icon {display:block; width:40px; padding:5px 10px; margin-right: 10px; float:left; color:#FFF; font-size:16px; text-align: center;} 
+.social_login .fb .icon {background:#3B5998;}
+.social_login .google .icon {background:#DD4B39;}
+.social_login .icon_title {display:block; padding:5px 0; float:left; font-weight: bold; font-size: 16px; color:#777;}
+.social_login .social_box:hover {background: #E4E4E2;}
+
+.centeredText {text-align: center; margin: 20px 0; clear: both; overflow: hidden; text-transform: uppercase;}
+
+.action_btns {clear:both; overflow: hidden;}
+.action_btns a {display: block;}
+
+/* User Login Form */
+.user_login {display: none;}
+.user_login label {display: block; margin-bottom:5px;}
+.user_login input[type="text"], .user_login input[type="email"], .user_login input[type="password"] {display: block; width:100%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_login input[type="checkbox"] {float:left; margin-right:5px;}
+.user_login input[type="checkbox"]+label {float:left;}
+
+.user_login .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+.forgot_password {display:block; margin: 20px 0 10px; clear: both; overflow: hidden; text-decoration: none; color:#ED6347;}
+
+/* User Register Form */
+.user_register {display: none;}
+.user_register label {display: block; margin-bottom:5px;}
+.user_register input[type="text"], .user_register input[type="email"], .user_register input[type="password"] {display: block; width:100%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_register input[type="checkbox"] {float:left; margin-right:5px;}
+.user_register input[type="checkbox"]+label {float:left;}
+
+.user_register .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+.hand {cursor: pointer !important;}
+#alert {color: red;}
+
+.swal-modal{width: 500px !important;}

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'ProductSans';
+    src: url('../fonts/ProductSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/ProductSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ProductSans';
+    src: url('../fonts/ProductSans-Italic.woff2') format('woff2'),
+        url('../fonts/ProductSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ProductSans';
+    src: url('../fonts/ProductSans-Bold.woff2') format('woff2'),
+        url('../fonts/ProductSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProductSans';
+    src: url('../fonts/ProductSans-Regular.woff2') format('woff2'),
+        url('../fonts/ProductSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:map-icons;
+        src:url(../fonts/map-icons.eot);
+        src:url(../fonts/map-icons.eot#iefix) 
+    format('embedded-opentype'),
+        url(../fonts/map-icons.ttf) 
+    format('truetype'),
+        url(../fonts/map-icons.woff) 
+    format('woff'),
+        url(../fonts/map-icons.svg#map-icons) 
+        format('svg');
+    font-weight:400;
+    font-style:normal
+}
