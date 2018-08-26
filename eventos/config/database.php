@@ -3,7 +3,7 @@ define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_DATABASE', 'eventos');
- 
+ //test commit
 class DB_class {
     function __construct()
     {
