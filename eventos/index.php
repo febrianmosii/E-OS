@@ -1,4 +1,5 @@
 <?php
+//test
   session_start();
   require_once 'includes/Requests.php';
   require_once 'includes/Fb_config.php';
